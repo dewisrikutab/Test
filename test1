@@ -27,7 +27,7 @@ describe('productsSlice', () => {
     });
 
 
-        // Mock axios error
+        // Mock axios error - ehat?
         jest.spyOn(axios, 'get').mockRejectedValue(new Error('Request failed'));
 
         await store.dispatch(getProducts());
